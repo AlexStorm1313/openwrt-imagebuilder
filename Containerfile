@@ -1,7 +1,7 @@
 FROM fedora:latest
 
 RUN dnf -y update && \ 
-    dnf install -y git gawk gettext ncurses-devel zlib-devel openssl-devel libxslt wget which @c-development @development-tools @development-libs zlib-static which python3 perl && \
+    dnf install -y git gawk gettext ncurses-devel zlib-devel openssl-devel libxslt wget which @c-development @development-tools @development-libs zlib-static which python3 perl python-setuptools && \
     dnf -y clean all
 
 # User and permissions, a.k.a. userspace
