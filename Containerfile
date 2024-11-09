@@ -30,3 +30,5 @@ RUN chown -R ${UUID}:${GUID} ${HOME_DIR} && \
 
 # Set fixed non-root user for compatibility with Podman/Docker and Kubernetes
 USER 1001
+
+WORKDIR ${HOME_DIR}
